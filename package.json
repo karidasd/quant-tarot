@@ -1,0 +1,13 @@
+{
+  "name": "quant-tarot",
+  "version": "1.0.0",
+  "description": "3D Holographic AI Crypto Tarot & Cybernetic Quant Oracle",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

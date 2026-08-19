@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkAIs Quant Tarot — AI Crypto Oracle & 3D Holographic Altar</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <h1>🔮 DARKAIS <span class="accent">QUANT TAROT</span> <span class="sub">AI ORACLE</span></h1>
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link active">Cyber Altar</a>
+            <a href="deck.html" class="nav-link">🃏 Card Grimoire (22)</a>
+            <a href="https://karidasd.github.io/darkais-web-radio/" target="_blank" class="nav-link">📻 Web Radio</a>
+            <a href="https://karidasd.github.io/" target="_blank" class="nav-link">🌐 Portfolio</a>
+        </nav>
+        <div class="header-right">
+            <a href="https://github.com/karidasd/quant-tarot" target="_blank" class="star-btn">⭐ Star Tarot</a>
+        </div>
+    </header>
+
+    <section class="altar-hero">
+        <h1 class="altar-title">The Cybernetic <span class="glow">Quant Oracle Altar</span></h1>
+        <p class="altar-desc">Consult the 22 Major Arcana of Quantitative Finance and Decentralized Chaos. Draw the holographic cards to unveil algorithmic alpha, market liquidity traps, and future price trajectories.</p>
+        
+        <!-- Spread Mode Tabs -->
+        <div class="spread-tabs">
+            <button class="spread-btn active" data-mode="3card">🔮 3-Card Timeline (Past / Present / Future)</button>
+            <button class="spread-btn" data-mode="1card">⚡ 1-Card Daily Alpha</button>
+            <button class="spread-btn" data-mode="5card">🌌 5-Card Deep Market Spread</button>
+        </div>
+
+        <div class="altar-actions">
+            <button class="btn btn-gold" onclick="drawAllCards()">✨ Draw All Cards</button>
+            <button class="btn btn-outline" onclick="shuffleDeck()">🔄 Reshuffle Deck</button>
+        </div>
+    </section>
+
+    <main class="altar-arena">
+        <!-- 3D Holographic Card Slots -->
+        <div class="cards-spread-container" id="cardsSpreadContainer"></div>
+
+        <!-- AI Oracle Reading Output -->
+        <div class="oracle-reading-panel" id="oracleReadingPanel">
+            <div class="reading-header">
+                <h3 class="reading-title">📜 The AI Quant Oracle Synthesizer</h3>
+                <span class="mono" style="font-size:11px; color:var(--acid);">● ALGORITHM SYNTHESIS COMPLETE</span>
+            </div>
+
+            <div class="card-breakdown-grid" id="cardBreakdownGrid"></div>
+
+            <div class="alpha-box">
+                <h4>🎯 PROPITIOUS TRADING PAIR CONSTELLATION:</h4>
+                <p id="luckyPairText" class="mono" style="font-size:16px; color:var(--gold); font-weight:bold;">SOL / USDC</p>
+                <p style="margin-top:6px; font-size:12.5px; color:var(--text-muted);">The cryptographic vectors suggest optimum risk-adjusted liquidity flow into this pair over the next trading epoch.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DarkAIs Quant Tarot. Created by <a href="https://karidasd.github.io/" target="_blank" style="color:var(--gold); text-decoration:underline;">Dimitris Karydas</a> • <a href="https://github.com/karidasd/quant-tarot" target="_blank" style="color:#FFB800;">⭐ Star on GitHub</a></p>
+    </footer>
+
+    <script src="js/tarot_data.js"></script>
+    <script src="js/oracle.js"></script>
+</body>
+</html>
