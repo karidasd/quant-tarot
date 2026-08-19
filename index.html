@@ -30,6 +30,17 @@
         <h1 class="altar-title">The Cybernetic <span class="glow">Quant Oracle Altar</span></h1>
         <p class="altar-desc">Consult the 22 Major Arcana of Quantitative Finance and Decentralized Chaos. Draw the holographic cards to unveil algorithmic alpha, market liquidity traps, and future price trajectories.</p>
         
+        <!-- 🔮 Custom Question Input Box -->
+        <div class="oracle-query-box">
+            <input type="text" id="oracleQueryInput" class="oracle-query-input" placeholder="Ask the Quant Oracle your question (e.g. Will SOL break ATH? Should I buy the dip?)...">
+            <div class="query-chips">
+                <button class="chip-btn" onclick="setQuery('Will Solana break All-Time High this month?')">📈 Will SOL break ATH?</button>
+                <button class="chip-btn" onclick="setQuery('Is this new memecoin token safe or a rug pull?')">☣️ Is this token safe?</button>
+                <button class="chip-btn" onclick="setQuery('Should I take profit on my long positions today?')">💰 Should I take profit?</button>
+                <button class="chip-btn" onclick="setQuery('What hidden market risk is looming over my portfolio?')">⚠️ What is my biggest risk?</button>
+            </div>
+        </div>
+
         <!-- Spread Mode Tabs -->
         <div class="spread-tabs">
             <button class="spread-btn active" data-mode="3card">🔮 3-Card Timeline (Past / Present / Future)</button>
@@ -61,7 +72,21 @@
                 <p id="luckyPairText" class="mono" style="font-size:16px; color:var(--gold); font-weight:bold;">SOL / USDC</p>
                 <p style="margin-top:6px; font-size:12.5px; color:var(--text-muted);">The cryptographic vectors suggest optimum risk-adjusted liquidity flow into this pair over the next trading epoch.</p>
             </div>
+
+            <div class="reading-actions-bar">
+                <button class="btn btn-gold" onclick="exportReadingImage()">📸 EXPORT READING CARD (.PNG)</button>
+                <button class="btn btn-outline" onclick="narrateProphecy()" style="border-color:var(--purple); color:var(--purple);">🔊 NARRATE PROPHECY</button>
+            </div>
         </div>
+
+        <!-- 📜 ORACLE VAULT JOURNAL -->
+        <section class="journal-section">
+            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border); padding-bottom:8px;">
+                <h3 style="font-size:16px; color:var(--gold);">📜 The Oracle Vault (Past Prophecies)</h3>
+                <span class="mono" style="font-size:11px; color:var(--text-muted);">LOCAL STORAGE VAULT</span>
+            </div>
+            <div class="journal-grid" id="journalGrid"></div>
+        </section>
     </main>
 
     <footer>
